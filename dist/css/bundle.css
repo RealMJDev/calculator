@@ -7,12 +7,9 @@ html, body {
     width: 100vw;
     height: 100vh;
 }
-
 body {
     background: linear-gradient(to top left, #0059ff, #0104ad, #0059ff);
 }
-
-
 .calc-container {
     border: 1px solid black;
     width: 100%;
@@ -21,16 +18,16 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
-    &-screen {
+
+}
+.calc-container-screen {
         /* == Delete Later == */ 
         border: 1px solid black;
         /* == Delete Later == */ 
         width: 95%;
         height: 20%;
     }
-
-    &-button {
+.calc-container-button {
         /* == Delete Later == */ 
         border: 1px solid black;
         /* == Delete Later == */ 
@@ -38,5 +35,5 @@ body {
         height: 80%;
     }
 
-}
 
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvYnVuZGxlLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
