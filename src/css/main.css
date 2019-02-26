@@ -9,34 +9,126 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to top left, #0059ff, #0104ad, #0059ff);
+    background: linear-gradient(to top left, #ff00ea, #0501ff);
+    font-size: 10px;
+    color: white;
+}
+.body1{
+    background: linear-gradient(to top left, #ff0040, #ff7301);
+}
+.body2{
+    background: linear-gradient(to bottom right, #00b350, #00a9af);
+}
+.body3{
+    background: linear-gradient(to bottom left, #5f009e, #9b1200);
+}
+.body4{
+    background: linear-gradient(to top left, #999600, #7d0096);
 }
 
 
 .calc-container {
-    border: 1px solid black;
     width: 100%;
     height: 100%;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     
     &-screen {
-        /* == Delete Later == */ 
-        border: 1px solid black;
-        /* == Delete Later == */ 
-        width: 95%;
-        height: 20%;
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        /* == Total sum div == */
+        &-sum {
+            width: 100%;
+            height: 30%;
+            padding: 10px;
+            font-size: 2.2em;
+            color: lightgray;
+            text-shadow: 0 0 2px black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: scroll;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+        }
+
+        /* == Total sum div == */
+        &-result {
+            position: relative;
+            width: 100%;
+            height: 60%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            font-size: 6em;
+            text-shadow: 0 0 2px black;
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 10%;
+                    right: 10%;
+                    margin: 0 auto;
+                    content: '';
+                    width: 80%;
+                    height: 1px;
+                    background: lightgray;
+
+                }
+        }
+
+    /* == Media Queries == */
+    @media all and (min-width: 400px){
+        width: 400px;
+    }
     }
 
-    &-button {
-        /* == Delete Later == */ 
-        border: 1px solid black;
-        /* == Delete Later == */ 
-        width: 95%;
-        height: 80%;
+
+
+    &-button { 
+        width: 100%;
+        height: 65%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        grid-row-gap: 2em;
+        
+            .btn {
+                border-radius: 50%;
+                outline: none;
+                background: rgba(255, 255, 255, 0.3);
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-size: 2.5em;
+                border: none;
+                box-shadow: 0 0 2px white;
+            }
+            .funk {
+                background: rgba(255, 255, 255, 0.15);
+            }    
+            .span-col-2 {
+                grid-column: span 2 / auto;
+                border-radius: 50px;
+            }
+
+
+        /* == Media Queries == */
+        @media all and (min-width: 400px){
+            width: 400px;
+        }
     }
+
+
 
 }
 
