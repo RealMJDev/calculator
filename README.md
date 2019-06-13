@@ -1,5 +1,5 @@
 # boilerplate
-starting a new project
+My calculator project
 
 ### Instructions
 
