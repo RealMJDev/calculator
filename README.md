@@ -1,5 +1,5 @@
 # boilerplate
-My calculator project
+My calculator project test
 
 ### Instructions
 
