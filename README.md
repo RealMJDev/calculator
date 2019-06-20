@@ -1,4 +1,4 @@
-# boilerplate
+# Calculator App
 My calculator project test
 
 ### Instructions
