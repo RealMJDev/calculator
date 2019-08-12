@@ -1,5 +1,5 @@
 # Calculator
-My calculator project test
+My calculator test project
 
 ### Instructions
 
